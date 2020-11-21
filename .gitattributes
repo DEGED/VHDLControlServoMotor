@@ -1,3 +1,4 @@
 * linguist-vendored
 *.xise linguist-vendored=false
+*.xise linguist-language=VHDL
 *.html linguist-language=VHDL
