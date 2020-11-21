@@ -1,0 +1,2 @@
+vhdtdtfi -lib work clock_divider.vhd -prj ControlServoMotor -o clock_divider.spl -module clock_divider -template C:/Xilinx/13.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e clock_divider.spl {D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/clock_divider.sym} 

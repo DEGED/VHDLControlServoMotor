@@ -1,0 +1,6 @@
+vhdl work "D:\ICESI\LOGICA DIGITAL\LaboratorioLogica\ControlServoMotor\test_receiver_ctrl.vhd"
+vhdl work "D:\ICESI\LOGICA DIGITAL\LaboratorioLogica\ControlServoMotor\rs232_receiver.vhd"
+vhdl work "D:\ICESI\LOGICA DIGITAL\LaboratorioLogica\ControlServoMotor\test_receiver.vhf"
+vhdl work "D:\ICESI\LOGICA DIGITAL\LaboratorioLogica\ControlServoMotor\PWM_motor8b.vhd"
+vhdl work "D:\ICESI\LOGICA DIGITAL\LaboratorioLogica\ControlServoMotor\clock_divider.vhd"
+vhdl work "D:\ICESI\LOGICA DIGITAL\LaboratorioLogica\ControlServoMotor\test_PWM_servo.vhf"

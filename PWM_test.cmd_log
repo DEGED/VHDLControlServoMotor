@@ -1,0 +1,43 @@
+xst -intstyle ise -ifn "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/PWM_test.xst" -ofn "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/PWM_test.syr" 
+xst -intstyle ise -ifn "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/PWM_test.xst" -ofn "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/PWM_test.syr" 
+xst -intstyle ise -ifn "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/PWM_test.xst" -ofn "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/PWM_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "PWM_test.ngc" PWM_test.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o PWM_test_map.ncd PWM_test.ngd PWM_test.pcf 
+par -w -intstyle ise -ol high -t 1 PWM_test_map.ncd PWM_test.ncd PWM_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PWM_test.twx PWM_test.ncd -o PWM_test.twr PWM_test.pcf 
+bitgen -intstyle ise -f PWM_test.ut PWM_test.ncd 
+xst -intstyle ise -ifn "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/PWM_test.xst" -ofn "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/PWM_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF1.ucf -p xc3s500e-fg320-4 "PWM_test.ngc" PWM_test.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF1.ucf -p xc3s500e-fg320-4 "PWM_test.ngc" PWM_test.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o PWM_test_map.ncd PWM_test.ngd PWM_test.pcf 
+par -w -intstyle ise -ol high -t 1 PWM_test_map.ncd PWM_test.ncd PWM_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PWM_test.twx PWM_test.ncd -o PWM_test.twr PWM_test.pcf -ucf UCF1.ucf 
+bitgen -intstyle ise -f PWM_test.ut PWM_test.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF1.ucf -p xc3s500e-fg320-4 "PWM_test.ngc" PWM_test.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o PWM_test_map.ncd PWM_test.ngd PWM_test.pcf 
+par -w -intstyle ise -ol high -t 1 PWM_test_map.ncd PWM_test.ncd PWM_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PWM_test.twx PWM_test.ncd -o PWM_test.twr PWM_test.pcf -ucf UCF1.ucf 
+xst -intstyle ise -ifn "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/PWM_test.xst" -ofn "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/PWM_test.syr" 
+xst -intstyle ise -ifn "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/PWM_test.xst" -ofn "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/PWM_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF1.ucf -p xc3s500e-fg320-4 "PWM_test.ngc" PWM_test.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o PWM_test_map.ncd PWM_test.ngd PWM_test.pcf 
+par -w -intstyle ise -ol high -t 1 PWM_test_map.ncd PWM_test.ncd PWM_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PWM_test.twx PWM_test.ncd -o PWM_test.twr PWM_test.pcf -ucf UCF1.ucf 
+bitgen -intstyle ise -f PWM_test.ut PWM_test.ncd 
+xst -intstyle ise -ifn "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/ControlServoMotor/PWM_test.xst" -ofn "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/ControlServoMotor/PWM_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF1.ucf -p xc3s500e-fg320-4 "PWM_test.ngc" PWM_test.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o PWM_test_map.ncd PWM_test.ngd PWM_test.pcf 
+par -w -intstyle ise -ol high -t 1 PWM_test_map.ncd PWM_test.ncd PWM_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PWM_test.twx PWM_test.ncd -o PWM_test.twr PWM_test.pcf -ucf UCF1.ucf 
+bitgen -intstyle ise -f PWM_test.ut PWM_test.ncd 
+xst -intstyle ise -ifn "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/ControlServoMotor/PWM_test.xst" -ofn "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/ControlServoMotor/PWM_test.syr" 
+xst -intstyle ise -ifn "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/ControlServoMotor/PWM_test.xst" -ofn "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/ControlServoMotor/PWM_test.syr" 
+xst -intstyle ise -ifn "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/ControlServoMotor/PWM_test.xst" -ofn "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/ControlServoMotor/PWM_test.syr" 
+vhdtdtfi -lib work PWM_test.vhd -prj ControlServoMotor -o PWM_test.spl -module PWM_test -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e PWM_test.spl {C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/ControlServoMotor/PWM_test.sym} 
+vhdtdtfi -lib work PWM_test.vhd -prj ControlServoMotor -o PWM_test.spl -module PWM_test -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e PWM_test.spl {C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/ControlServoMotor/PWM_test.sym} 
+vhdtdtfi -lib work PWM_test.vhd -prj ControlServoMotor -o PWM_test.spl -module PWM_test -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e PWM_test.spl {C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/ControlServoMotor/PWM_test.sym} 
+vhdtdtfi -lib work PWM_test.vhd -prj ControlServoMotor -o PWM_test.spl -module PWM_test -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e PWM_test.spl {C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/ControlServoMotor/PWM_test.sym} 

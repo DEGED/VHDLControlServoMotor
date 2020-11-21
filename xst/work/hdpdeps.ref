@@ -1,0 +1,25 @@
+V3 13
+FL "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/ControlServoMotor/Circuito.vhf" 2020/11/12.13:29:21 P.20131013
+EN work/Circuito 1605209799 \
+      FL "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/ControlServoMotor/Circuito.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Circuito/BEHAVIORAL 1605209800 \
+      FL "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/ControlServoMotor/Circuito.vhf" \
+      EN work/Circuito 1605209799 CP debounce CP PWM_test CP GND
+FL "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/ControlServoMotor/debounce.vhd" 2020/10/29.13:24:11 P.20131013
+EN work/debounce 1605209795 \
+      FL "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/ControlServoMotor/debounce.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/debounce/Behavioral 1605209796 \
+      FL "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/ControlServoMotor/debounce.vhd" \
+      EN work/debounce 1605209795
+FL "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/ControlServoMotor/PWM_test.vhd" 2020/11/12.13:36:32 P.20131013
+EN work/PWM_test 1605209797 \
+      FL "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/ControlServoMotor/PWM_test.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/PWM_test/PWM_1 1605209798 \
+      FL "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/ControlServoMotor/PWM_test.vhd" \
+      EN work/PWM_test 1605209797

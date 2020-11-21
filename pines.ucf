@@ -1,0 +1,7 @@
+NET "SW<0>" LOC = "L13" ;
+NET "SW<1>" LOC = "L14" ;
+NET "SW<2>" LOC = "H18" ;
+NET "SW<3>" LOC = "N17" ;
+NET "clk" LOC = "C9" | IOSTANDARD = LVTTL;
+NET "led1" LOC = "E9"  | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
+NET "led2" LOC = "F7"  | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;

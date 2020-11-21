@@ -1,0 +1,7 @@
+[Inputs]
+D_IN
+clock
+reset
+[Outputs]
+Q_OUT
+[BiDir]

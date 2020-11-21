@@ -1,0 +1,6 @@
+EN pwm_test NULL "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/ControlServoMotor/PWM_test.vhd" sub00/vhpl00 1605209797
+AR debounce behavioral "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/ControlServoMotor/debounce.vhd" sub00/vhpl03 1605209796
+EN debounce NULL "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/ControlServoMotor/debounce.vhd" sub00/vhpl02 1605209795
+AR circuito behavioral "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/ControlServoMotor/Circuito.vhf" sub00/vhpl05 1605209800
+EN circuito NULL "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/ControlServoMotor/Circuito.vhf" sub00/vhpl04 1605209799
+AR pwm_test pwm_1 "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/ControlServoMotor/PWM_test.vhd" sub00/vhpl01 1605209798

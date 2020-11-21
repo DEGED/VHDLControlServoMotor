@@ -1,0 +1,5 @@
+MODULE test_receiver
+	SUBMODULE rs232_receiver
+		INSTANCE XLXI_1
+	SUBMODULE test_receiver_ctrl
+		INSTANCE XLXI_27

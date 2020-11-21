@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -refsym test_receiver {D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/test_receiver.sch} {D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/test_receiver.sym} 

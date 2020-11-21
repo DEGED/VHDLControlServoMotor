@@ -1,0 +1,576 @@
+Release 13.4 - xst O.87xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: test_PWM_servo.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "test_PWM_servo.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "test_PWM_servo"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : test_PWM_servo
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/rs232_receiver.vhd" in Library work.
+Architecture rtl of Entity rs232_receiver is up to date.
+Compiling vhdl file "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/test_receiver_ctrl.vhd" in Library work.
+Architecture rtl of Entity test_receiver_ctrl is up to date.
+Compiling vhdl file "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/clock_divider.vhd" in Library work.
+Architecture behavioral of Entity clock_divider is up to date.
+Compiling vhdl file "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/PWM_motor8b.vhd" in Library work.
+Entity <pwm_motor8b> compiled.
+Entity <pwm_motor8b> (Architecture <behavioral>) compiled.
+Compiling vhdl file "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/test_PWM_servo.vhf" in Library work.
+Architecture behavioral of Entity test_receiver_muser_test_pwm_servo is up to date.
+Architecture behavioral of Entity test_pwm_servo is up to date.
+Compiling vhdl file "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/test_receiver.vhf" in Library work.
+Architecture behavioral of Entity test_receiver is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <test_PWM_servo> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <test_receiver_MUSER_test_PWM_servo> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <clock_divider> in library <work> (architecture <behavioral>) with generics.
+	N = 500
+
+Analyzing hierarchy for entity <PWM_motor8b> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <rs232_receiver> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <test_receiver_ctrl> in library <work> (architecture <rtl>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <test_PWM_servo> in library <work> (Architecture <behavioral>).
+Entity <test_PWM_servo> analyzed. Unit <test_PWM_servo> generated.
+
+Analyzing Entity <test_receiver_MUSER_test_PWM_servo> in library <work> (Architecture <behavioral>).
+Entity <test_receiver_MUSER_test_PWM_servo> analyzed. Unit <test_receiver_MUSER_test_PWM_servo> generated.
+
+Analyzing Entity <rs232_receiver> in library <work> (Architecture <rtl>).
+Entity <rs232_receiver> analyzed. Unit <rs232_receiver> generated.
+
+Analyzing Entity <test_receiver_ctrl> in library <work> (Architecture <rtl>).
+Entity <test_receiver_ctrl> analyzed. Unit <test_receiver_ctrl> generated.
+
+Analyzing generic Entity <clock_divider> in library <work> (Architecture <behavioral>).
+	N = 500
+Entity <clock_divider> analyzed. Unit <clock_divider> generated.
+
+Analyzing Entity <PWM_motor8b> in library <work> (Architecture <behavioral>).
+Entity <PWM_motor8b> analyzed. Unit <PWM_motor8b> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <clock_divider>.
+    Related source file is "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/clock_divider.vhd".
+    Found 1-bit register for signal <clk_10us>.
+    Found 9-bit comparator less for signal <clk_10us$cmp_lt0000> created at line 46.
+    Found 9-bit up counter for signal <cnt>.
+    Found 9-bit comparator less for signal <cnt$cmp_lt0000> created at line 48.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <clock_divider> synthesized.
+
+
+Synthesizing Unit <PWM_motor8b>.
+    Related source file is "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/PWM_motor8b.vhd".
+    Register <pwm_out> equivalent to <pwm_Led> has been removed
+    Found 1-bit register for signal <pwm_Led>.
+    Found 11-bit up counter for signal <cnt>.
+    Found 9-bit comparator greater for signal <cnt$cmp_gt0000> created at line 40.
+    Found 9-bit comparator lessequal for signal <cnt$cmp_le0000> created at line 40.
+    Found 9-bit comparator greater for signal <pwm_Led$cmp_gt0000> created at line 44.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+Unit <PWM_motor8b> synthesized.
+
+
+Synthesizing Unit <rs232_receiver>.
+    Related source file is "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/rs232_receiver.vhd".
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk_i                     (rising_edge)        |
+    | Reset              | rst_i                     (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | wait_for_rx_start                              |
+    | Power Up State     | wait_for_rx_start                              |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <dat_o>.
+    Found 1-bit register for signal <stb_o>.
+    Found 9-bit register for signal <baudrate_counter>.
+    Found 9-bit subtractor for signal <baudrate_counter$share0000> created at line 55.
+    Found 3-bit register for signal <bit_counter>.
+    Found 3-bit subtractor for signal <bit_counter$addsub0000> created at line 80.
+    Found 8-bit register for signal <shift_register>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  29 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+Unit <rs232_receiver> synthesized.
+
+
+Synthesizing Unit <test_receiver_ctrl>.
+    Related source file is "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/test_receiver_ctrl.vhd".
+WARNING:Xst:1780 - Signal <counter> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <rs232_receiver_ack>.
+    Found 8-bit register for signal <led_latch>.
+    Found 1-bit register for signal <state<0>>.
+    Summary:
+	inferred  10 D-type flip-flop(s).
+Unit <test_receiver_ctrl> synthesized.
+
+
+Synthesizing Unit <test_receiver_MUSER_test_PWM_servo>.
+    Related source file is "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/test_PWM_servo.vhf".
+Unit <test_receiver_MUSER_test_PWM_servo> synthesized.
+
+
+Synthesizing Unit <test_PWM_servo>.
+    Related source file is "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/test_PWM_servo.vhf".
+Unit <test_PWM_servo> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 3-bit subtractor                                      : 1
+ 9-bit subtractor                                      : 1
+# Counters                                             : 2
+ 11-bit up counter                                     : 1
+ 9-bit up counter                                      : 1
+# Registers                                            : 17
+ 1-bit register                                        : 13
+ 3-bit register                                        : 1
+ 8-bit register                                        : 2
+ 9-bit register                                        : 1
+# Comparators                                          : 5
+ 9-bit comparator greater                              : 2
+ 9-bit comparator less                                 : 2
+ 9-bit comparator lessequal                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <XLXI_1/XLXI_1/state/FSM> on signal <state[1:2]> with gray encoding.
+-------------------------------
+ State             | Encoding
+-------------------------------
+ wait_for_rx_start | 00
+ wait_half_bit     | 01
+ receive_bits      | 11
+ wait_for_stop_bit | 10
+-------------------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Adders/Subtractors                                   : 2
+ 3-bit subtractor                                      : 1
+ 9-bit subtractor                                      : 1
+# Counters                                             : 2
+ 11-bit up counter                                     : 1
+ 9-bit up counter                                      : 1
+# Registers                                            : 41
+ Flip-Flops                                            : 41
+# Comparators                                          : 5
+ 9-bit comparator greater                              : 2
+ 9-bit comparator less                                 : 2
+ 9-bit comparator lessequal                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <XLXI_3/cnt_9> of sequential type is unconnected in block <test_PWM_servo>.
+WARNING:Xst:2677 - Node <XLXI_3/cnt_10> of sequential type is unconnected in block <test_PWM_servo>.
+
+Optimizing unit <test_PWM_servo> ...
+
+Optimizing unit <rs232_receiver> ...
+
+Optimizing unit <test_receiver_ctrl> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block test_PWM_servo, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 61
+ Flip-Flops                                            : 61
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : test_PWM_servo.ngr
+Top Level Output File Name         : test_PWM_servo
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 12
+
+Cell Usage :
+# BELS                             : 162
+#      GND                         : 1
+#      INV                         : 13
+#      LUT1                        : 17
+#      LUT2                        : 16
+#      LUT2_D                      : 1
+#      LUT2_L                      : 2
+#      LUT3                        : 9
+#      LUT3_D                      : 1
+#      LUT3_L                      : 3
+#      LUT4                        : 27
+#      LUT4_D                      : 1
+#      LUT4_L                      : 8
+#      MUXCY                       : 33
+#      MUXF5                       : 2
+#      VCC                         : 1
+#      XORCY                       : 27
+# FlipFlops/Latches                : 61
+#      FDCE                        : 1
+#      FDE                         : 30
+#      FDR                         : 20
+#      FDRE                        : 9
+#      FDSE                        : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 11
+#      IBUF                        : 1
+#      OBUF                        : 10
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       57  out of   4656     1%  
+ Number of Slice Flip Flops:             61  out of   9312     0%  
+ Number of 4 input LUTs:                 98  out of   9312     1%  
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    232     5%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK_50MHZ                          | BUFGP                  | 51    |
+XLXI_2/clk_10us                    | NONE(XLXI_3/pwm_Led)   | 10    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+----------------------------------------------------------------------+--------------------------+-------+
+Control Signal                                                        | Buffer(FF name)          | Load  |
+----------------------------------------------------------------------+--------------------------+-------+
+XLXI_1/XLXI_27/rs232_receiver_ack(XLXI_1/XLXI_27/rs232_receiver_ack:Q)| NONE(XLXI_1/XLXI_1/stb_o)| 1     |
+----------------------------------------------------------------------+--------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.533ns (Maximum Frequency: 153.069MHz)
+   Minimum input arrival time before clock: 5.507ns
+   Maximum output required time after clock: 4.450ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK_50MHZ'
+  Clock period: 6.533ns (frequency: 153.069MHz)
+  Total number of paths / destination ports: 687 / 86
+-------------------------------------------------------------------------
+Delay:               6.533ns (Levels of Logic = 4)
+  Source:            XLXI_1/XLXI_1/baudrate_counter_5 (FF)
+  Destination:       XLXI_1/XLXI_1/baudrate_counter_7 (FF)
+  Source Clock:      CLK_50MHZ rising
+  Destination Clock: CLK_50MHZ rising
+
+  Data Path: XLXI_1/XLXI_1/baudrate_counter_5 to XLXI_1/XLXI_1/baudrate_counter_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.591   0.706  XLXI_1/XLXI_1/baudrate_counter_5 (XLXI_1/XLXI_1/baudrate_counter_5)
+     LUT4:I0->O            1   0.704   0.424  XLXI_1/XLXI_1/state_cmp_eq000032 (XLXI_1/XLXI_1/state_cmp_eq000032)
+     LUT4:I3->O           23   0.704   1.237  XLXI_1/XLXI_1/state_cmp_eq000034 (XLXI_1/XLXI_1/state_cmp_eq0000)
+     LUT3:I2->O            2   0.704   0.451  XLXI_1/XLXI_1/baudrate_counter_mux0000<4>20 (XLXI_1/XLXI_1/baudrate_counter_mux0000<0>6)
+     LUT4:I3->O            1   0.704   0.000  XLXI_1/XLXI_1/baudrate_counter_mux0000<4>27 (XLXI_1/XLXI_1/baudrate_counter_mux0000<4>)
+     FDE:D                     0.308          XLXI_1/XLXI_1/baudrate_counter_4
+    ----------------------------------------
+    Total                      6.533ns (3.715ns logic, 2.818ns route)
+                                       (56.9% logic, 43.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_2/clk_10us'
+  Clock period: 6.158ns (frequency: 162.390MHz)
+  Total number of paths / destination ports: 144 / 20
+-------------------------------------------------------------------------
+Delay:               6.158ns (Levels of Logic = 11)
+  Source:            XLXI_3/cnt_0 (FF)
+  Destination:       XLXI_3/cnt_0 (FF)
+  Source Clock:      XLXI_2/clk_10us rising
+  Destination Clock: XLXI_2/clk_10us rising
+
+  Data Path: XLXI_3/cnt_0 to XLXI_3/cnt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.526  XLXI_3/cnt_0 (XLXI_3/cnt_0)
+     LUT2:I1->O            1   0.704   0.000  XLXI_3/Mcompar_pwm_Led_cmp_gt0000_lut<0> (XLXI_3/Mcompar_pwm_Led_cmp_gt0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  XLXI_3/Mcompar_pwm_Led_cmp_gt0000_cy<0> (XLXI_3/Mcompar_pwm_Led_cmp_gt0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_3/Mcompar_pwm_Led_cmp_gt0000_cy<1> (XLXI_3/Mcompar_pwm_Led_cmp_gt0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_3/Mcompar_pwm_Led_cmp_gt0000_cy<2> (XLXI_3/Mcompar_pwm_Led_cmp_gt0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_3/Mcompar_pwm_Led_cmp_gt0000_cy<3> (XLXI_3/Mcompar_pwm_Led_cmp_gt0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_3/Mcompar_pwm_Led_cmp_gt0000_cy<4> (XLXI_3/Mcompar_pwm_Led_cmp_gt0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_3/Mcompar_pwm_Led_cmp_gt0000_cy<5> (XLXI_3/Mcompar_pwm_Led_cmp_gt0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_3/Mcompar_pwm_Led_cmp_gt0000_cy<6> (XLXI_3/Mcompar_pwm_Led_cmp_gt0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_3/Mcompar_pwm_Led_cmp_gt0000_cy<7> (XLXI_3/Mcompar_pwm_Led_cmp_gt0000_cy<7>)
+     MUXCY:CI->O           3   0.459   0.566  XLXI_3/Mcompar_pwm_Led_cmp_gt0000_cy<8> (XLXI_3/Mcompar_pwm_Led_cmp_gt0000_cy<8>)
+     LUT3:I2->O            9   0.704   0.820  XLXI_3/cnt_and000040 (XLXI_3/cnt_and0000)
+     FDR:R                     0.911          XLXI_3/cnt_0
+    ----------------------------------------
+    Total                      6.158ns (4.246ns logic, 1.912ns route)
+                                       (69.0% logic, 31.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK_50MHZ'
+  Total number of paths / destination ports: 20 / 20
+-------------------------------------------------------------------------
+Offset:              5.507ns (Levels of Logic = 4)
+  Source:            RS232_DCE_RXD (PAD)
+  Destination:       XLXI_1/XLXI_1/baudrate_counter_8 (FF)
+  Destination Clock: CLK_50MHZ rising
+
+  Data Path: RS232_DCE_RXD to XLXI_1/XLXI_1/baudrate_counter_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.218   0.932  RS232_DCE_RXD_IBUF (RS232_DCE_RXD_IBUF)
+     LUT3_D:I0->O          2   0.704   0.482  XLXI_1/XLXI_1/baudrate_counter_mux0000<8>20 (XLXI_1/XLXI_1/baudrate_counter_mux0000<0>20)
+     LUT4:I2->O            1   0.704   0.420  XLXI_1/XLXI_1/baudrate_counter_mux0000<0>27 (XLXI_1/XLXI_1/baudrate_counter_mux0000<0>27)
+     MUXF5:S->O            1   0.739   0.000  XLXI_1/XLXI_1/baudrate_counter_mux0000<0>32 (XLXI_1/XLXI_1/baudrate_counter_mux0000<0>)
+     FDE:D                     0.308          XLXI_1/XLXI_1/baudrate_counter_8
+    ----------------------------------------
+    Total                      5.507ns (3.673ns logic, 1.834ns route)
+                                       (66.7% logic, 33.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_2/clk_10us'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.310ns (Levels of Logic = 1)
+  Source:            XLXI_3/pwm_Led (FF)
+  Destination:       IO7 (PAD)
+  Source Clock:      XLXI_2/clk_10us rising
+
+  Data Path: XLXI_3/pwm_Led to IO7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDSE:C->Q             2   0.591   0.447  XLXI_3/pwm_Led (XLXI_3/pwm_Led)
+     OBUF:I->O                 3.272          IO7_OBUF (IO7)
+    ----------------------------------------
+    Total                      4.310ns (3.863ns logic, 0.447ns route)
+                                       (89.6% logic, 10.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK_50MHZ'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.450ns (Levels of Logic = 1)
+  Source:            XLXI_1/XLXI_27/led_latch_7 (FF)
+  Destination:       LED<7> (PAD)
+  Source Clock:      CLK_50MHZ rising
+
+  Data Path: XLXI_1/XLXI_27/led_latch_7 to LED<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              4   0.591   0.587  XLXI_1/XLXI_27/led_latch_7 (XLXI_1/XLXI_27/led_latch_7)
+     OBUF:I->O                 3.272          LED_7_OBUF (LED<7>)
+    ----------------------------------------
+    Total                      4.450ns (3.863ns logic, 0.587ns route)
+                                       (86.8% logic, 13.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.34 secs
+ 
+--> 
+
+Total memory usage is 269668 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

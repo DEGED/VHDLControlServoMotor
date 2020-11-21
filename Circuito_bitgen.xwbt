@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\prestamo\Desktop\Nueva carpeta\ControlServoMotor\ControlServoMotor\Circuito.ncd
+OUTFILE=C:\Users\prestamo\Desktop\Nueva carpeta\ControlServoMotor\ControlServoMotor\Circuito.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=C:\Users\prestamo\Desktop\Nueva carpeta\ControlServoMotor\ControlServoMotor
+LICENSE=WebPack
+USER_INFO=210703355_0_0_935

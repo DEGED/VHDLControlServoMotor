@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/ControlServoMotor/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/ControlServoMotor/xst"
+elaborate
+-ifn PWM_test.prj
+-ifmt mixed

@@ -1,0 +1,6 @@
+vhdl work "test_receiver_ctrl.vhd"
+vhdl work "rs232_receiver.vhd"
+vhdl work "test_receiver.vhf"
+vhdl work "PWM_motor8b.vhd"
+vhdl work "clock_divider.vhd"
+vhdl work "test_PWM_servo.vhf"

@@ -1,0 +1,7 @@
+[Inputs]
+clk_10us
+=cmpPwm[7:0]=
+[Outputs]
+pwm_out
+pwm_Led
+[BiDir]

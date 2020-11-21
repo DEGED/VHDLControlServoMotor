@@ -1,0 +1,9 @@
+
+NET "clk" LOC = "C9" | IOSTANDARD = LVTTL | PULLDOWN;
+
+NET "PWM_o" LOC = "F7" | IOSTANDARD = LVTTL | DRIVE = 8;
+
+NET "selector<0>"  LOC = "L13" | IOSTANDARD = LVTTL | PULLUP; ; # al switch SW0
+NET "selector<1>"  LOC = "L14"  | IOSTANDARD = LVTTL | PULLUP; # al switch SW1
+NET "selector<2>"  LOC = "H18"  | IOSTANDARD = LVTTL | PULLUP; # al switch SW1
+

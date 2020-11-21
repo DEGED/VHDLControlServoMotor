@@ -1,0 +1,2 @@
+vhdtdtfi -lib work PWM_motor8b.vhd -prj ControlServoMotor -o PWM_motor8b.spl -module PWM_motor8b -template C:/Xilinx/13.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e PWM_motor8b.spl {D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/PWM_motor8b.sym} 

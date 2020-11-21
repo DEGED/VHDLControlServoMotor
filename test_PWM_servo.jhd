@@ -1,0 +1,7 @@
+MODULE test_PWM_servo
+	SUBMODULE test_receiver
+		INSTANCE XLXI_1
+	SUBMODULE clock_divider
+		INSTANCE XLXI_2
+	SUBMODULE PWM_motor8b
+		INSTANCE XLXI_3

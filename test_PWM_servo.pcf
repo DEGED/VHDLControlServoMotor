@@ -1,0 +1,21 @@
+//! **************************************************************************
+// Written by: Map O.87xd on Fri Mar 30 01:39:49 2012
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "IO7" LOCATE = SITE "E7" LEVEL 1;
+COMP "IO8" LOCATE = SITE "F7" LEVEL 1;
+COMP "CLK_50MHZ" LOCATE = SITE "C9" LEVEL 1;
+COMP "LED<0>" LOCATE = SITE "F12" LEVEL 1;
+COMP "LED<1>" LOCATE = SITE "E12" LEVEL 1;
+COMP "LED<2>" LOCATE = SITE "E11" LEVEL 1;
+COMP "LED<3>" LOCATE = SITE "F11" LEVEL 1;
+COMP "LED<4>" LOCATE = SITE "C11" LEVEL 1;
+COMP "LED<5>" LOCATE = SITE "D11" LEVEL 1;
+COMP "LED<6>" LOCATE = SITE "E9" LEVEL 1;
+COMP "LED<7>" LOCATE = SITE "F9" LEVEL 1;
+COMP "RS232_DCE_RXD" LOCATE = SITE "R7" LEVEL 1;
+NET "CLK_50MHZ_BUFGP/IBUFG" BEL "CLK_50MHZ_BUFGP/BUFG.GCLKMUX"
+        USELOCALCONNECT;
+SCHEMATIC END;
+

@@ -1,0 +1,9 @@
+[Inputs]
+clk
+RIGHT
+MIDDLE
+LEFT
+[Outputs]
+PWM_o
+PWM_led
+[BiDir]

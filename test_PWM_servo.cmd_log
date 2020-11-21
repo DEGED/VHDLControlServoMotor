@@ -1,0 +1,57 @@
+xst -intstyle ise -ifn "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/test_PWM_servo.xst" -ofn "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/test_PWM_servo.syr" 
+xst -intstyle ise -ifn "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/test_PWM_servo.xst" -ofn "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/test_PWM_servo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan3e.ucf -p xc3s500e-fg320-4 "test_PWM_servo.ngc" test_PWM_servo.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o test_PWM_servo_map.ncd test_PWM_servo.ngd test_PWM_servo.pcf 
+par -w -intstyle ise -ol high -t 1 test_PWM_servo_map.ncd test_PWM_servo.ncd test_PWM_servo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml test_PWM_servo.twx test_PWM_servo.ncd -o test_PWM_servo.twr test_PWM_servo.pcf -ucf spartan3e.ucf 
+bitgen -intstyle ise -f test_PWM_servo.ut test_PWM_servo.ncd 
+xst -intstyle ise -ifn "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/test_PWM_servo.xst" -ofn "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/test_PWM_servo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan3e.ucf -p xc3s500e-fg320-4 "test_PWM_servo.ngc" test_PWM_servo.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o test_PWM_servo_map.ncd test_PWM_servo.ngd test_PWM_servo.pcf 
+par -w -intstyle ise -ol high -t 1 test_PWM_servo_map.ncd test_PWM_servo.ncd test_PWM_servo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml test_PWM_servo.twx test_PWM_servo.ncd -o test_PWM_servo.twr test_PWM_servo.pcf -ucf spartan3e.ucf 
+bitgen -intstyle ise -f test_PWM_servo.ut test_PWM_servo.ncd 
+xst -intstyle ise -ifn "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/test_PWM_servo.xst" -ofn "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/test_PWM_servo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan3e.ucf -p xc3s500e-fg320-4 "test_PWM_servo.ngc" test_PWM_servo.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o test_PWM_servo_map.ncd test_PWM_servo.ngd test_PWM_servo.pcf 
+par -w -intstyle ise -ol high -t 1 test_PWM_servo_map.ncd test_PWM_servo.ncd test_PWM_servo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml test_PWM_servo.twx test_PWM_servo.ncd -o test_PWM_servo.twr test_PWM_servo.pcf -ucf spartan3e.ucf 
+bitgen -intstyle ise -f test_PWM_servo.ut test_PWM_servo.ncd 
+xst -intstyle ise -ifn "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/test_PWM_servo.xst" -ofn "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/test_PWM_servo.syr" 
+xst -intstyle ise -ifn "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/test_PWM_servo.xst" -ofn "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/test_PWM_servo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan3e.ucf -p xc3s500e-fg320-4 "test_PWM_servo.ngc" test_PWM_servo.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o test_PWM_servo_map.ncd test_PWM_servo.ngd test_PWM_servo.pcf 
+par -w -intstyle ise -ol high -t 1 test_PWM_servo_map.ncd test_PWM_servo.ncd test_PWM_servo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml test_PWM_servo.twx test_PWM_servo.ncd -o test_PWM_servo.twr test_PWM_servo.pcf -ucf spartan3e.ucf 
+bitgen -intstyle ise -f test_PWM_servo.ut test_PWM_servo.ncd 
+xst -intstyle ise -ifn "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/test_PWM_servo.xst" -ofn "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/test_PWM_servo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan3e.ucf -p xc3s500e-fg320-4 "test_PWM_servo.ngc" test_PWM_servo.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o test_PWM_servo_map.ncd test_PWM_servo.ngd test_PWM_servo.pcf 
+par -w -intstyle ise -ol high -t 1 test_PWM_servo_map.ncd test_PWM_servo.ncd test_PWM_servo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml test_PWM_servo.twx test_PWM_servo.ncd -o test_PWM_servo.twr test_PWM_servo.pcf -ucf spartan3e.ucf 
+bitgen -intstyle ise -f test_PWM_servo.ut test_PWM_servo.ncd 
+xst -intstyle ise -ifn "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/test_PWM_servo.xst" -ofn "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/test_PWM_servo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan3e.ucf -p xc3s500e-fg320-4 "test_PWM_servo.ngc" test_PWM_servo.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o test_PWM_servo_map.ncd test_PWM_servo.ngd test_PWM_servo.pcf 
+par -w -intstyle ise -ol high -t 1 test_PWM_servo_map.ncd test_PWM_servo.ncd test_PWM_servo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml test_PWM_servo.twx test_PWM_servo.ncd -o test_PWM_servo.twr test_PWM_servo.pcf -ucf spartan3e.ucf 
+bitgen -intstyle ise -f test_PWM_servo.ut test_PWM_servo.ncd 
+xst -intstyle ise -ifn "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/test_PWM_servo.xst" -ofn "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/test_PWM_servo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan3e.ucf -p xc3s500e-fg320-4 "test_PWM_servo.ngc" test_PWM_servo.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o test_PWM_servo_map.ncd test_PWM_servo.ngd test_PWM_servo.pcf 
+par -w -intstyle ise -ol high -t 1 test_PWM_servo_map.ncd test_PWM_servo.ncd test_PWM_servo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml test_PWM_servo.twx test_PWM_servo.ncd -o test_PWM_servo.twr test_PWM_servo.pcf -ucf spartan3e.ucf 
+bitgen -intstyle ise -f test_PWM_servo.ut test_PWM_servo.ncd 
+xst -intstyle ise -ifn "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/test_PWM_servo.xst" -ofn "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/test_PWM_servo.syr" 
+xst -intstyle ise -ifn "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/test_PWM_servo.xst" -ofn "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/test_PWM_servo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan3e.ucf -p xc3s500e-fg320-4 "test_PWM_servo.ngc" test_PWM_servo.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o test_PWM_servo_map.ncd test_PWM_servo.ngd test_PWM_servo.pcf 
+par -w -intstyle ise -ol high -t 1 test_PWM_servo_map.ncd test_PWM_servo.ncd test_PWM_servo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml test_PWM_servo.twx test_PWM_servo.ncd -o test_PWM_servo.twr test_PWM_servo.pcf -ucf spartan3e.ucf 
+bitgen -intstyle ise -f test_PWM_servo.ut test_PWM_servo.ncd 
+xst -intstyle ise -ifn "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/test_PWM_servo.xst" -ofn "D:/ICESI/LOGICA DIGITAL/LaboratorioLogica/ControlServoMotor/test_PWM_servo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan3e.ucf -p xc3s500e-fg320-4 "test_PWM_servo.ngc" test_PWM_servo.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o test_PWM_servo_map.ncd test_PWM_servo.ngd test_PWM_servo.pcf 
+par -w -intstyle ise -ol high -t 1 test_PWM_servo_map.ncd test_PWM_servo.ncd test_PWM_servo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml test_PWM_servo.twx test_PWM_servo.ncd -o test_PWM_servo.twr test_PWM_servo.pcf -ucf spartan3e.ucf 
+bitgen -intstyle ise -f test_PWM_servo.ut test_PWM_servo.ncd 

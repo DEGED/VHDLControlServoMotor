@@ -1,0 +1,433 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: Circuito.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Circuito.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Circuito"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : Circuito
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/ControlServoMotor/debounce.vhd" in Library work.
+Architecture behavioral of Entity debounce is up to date.
+Compiling vhdl file "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/ControlServoMotor/PWM_test.vhd" in Library work.
+Entity <pwm_test> compiled.
+Entity <pwm_test> (Architecture <pwm_1>) compiled.
+Compiling vhdl file "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/ControlServoMotor/Circuito.vhf" in Library work.
+Architecture behavioral of Entity circuito is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Circuito> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <debounce> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <PWM_test> in library <work> (architecture <pwm_1>) with generics.
+	Max = 1250000
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Circuito> in library <work> (Architecture <behavioral>).
+Entity <Circuito> analyzed. Unit <Circuito> generated.
+
+Analyzing Entity <debounce> in library <work> (Architecture <behavioral>).
+Entity <debounce> analyzed. Unit <debounce> generated.
+
+Analyzing generic Entity <PWM_test> in library <work> (Architecture <pwm_1>).
+	Max = 1250000
+Entity <PWM_test> analyzed. Unit <PWM_test> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <debounce>.
+    Related source file is "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/ControlServoMotor/debounce.vhd".
+    Found 21-bit up counter for signal <clk_div>.
+    Found 1-bit register for signal <Q1>.
+    Found 1-bit register for signal <Q2>.
+    Found 1-bit register for signal <Q3>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   3 D-type flip-flop(s).
+Unit <debounce> synthesized.
+
+
+Synthesizing Unit <PWM_test>.
+    Related source file is "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/ControlServoMotor/PWM_test.vhd".
+    Found 21-bit up counter for signal <PWM_Count>.
+    Found 21-bit comparator lessequal for signal <PWM_led$cmp_le0000> created at line 60.
+    Found 21-bit comparator lessequal for signal <PWM_led$cmp_le0001> created at line 69.
+    Found 21-bit comparator lessequal for signal <PWM_led$cmp_le0002> created at line 78.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   3 Comparator(s).
+Unit <PWM_test> synthesized.
+
+
+Synthesizing Unit <Circuito>.
+    Related source file is "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/ControlServoMotor/Circuito.vhf".
+Unit <Circuito> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 4
+ 21-bit up counter                                     : 4
+# Registers                                            : 9
+ 1-bit register                                        : 9
+# Comparators                                          : 3
+ 21-bit comparator lessequal                           : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 4
+ 21-bit up counter                                     : 4
+# Registers                                            : 9
+ Flip-Flops                                            : 9
+# Comparators                                          : 3
+ 21-bit comparator lessequal                           : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Circuito> ...
+
+Optimizing unit <debounce> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Circuito, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 93
+ Flip-Flops                                            : 93
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Circuito.ngr
+Top Level Output File Name         : Circuito
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 6
+
+Cell Usage :
+# BELS                             : 351
+#      GND                         : 1
+#      INV                         : 11
+#      LUT1                        : 88
+#      LUT2                        : 9
+#      LUT3                        : 7
+#      LUT4                        : 22
+#      MUXCY                       : 128
+#      VCC                         : 1
+#      XORCY                       : 84
+# FlipFlops/Latches                : 93
+#      FD                          : 84
+#      FDE                         : 9
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 5
+#      IBUF                        : 3
+#      OBUF                        : 2
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       73  out of   4656     1%  
+ Number of Slice Flip Flops:             93  out of   9312     0%  
+ Number of 4 input LUTs:                137  out of   9312     1%  
+ Number of IOs:                           6
+ Number of bonded IOBs:                   6  out of    232     2%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 93    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 4.695ns (Maximum Frequency: 212.993MHz)
+   Minimum input arrival time before clock: 1.946ns
+   Maximum output required time after clock: 9.577ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.695ns (frequency: 212.993MHz)
+  Total number of paths / destination ports: 1119 / 99
+-------------------------------------------------------------------------
+Delay:               4.695ns (Levels of Logic = 21)
+  Source:            XLXI_9/PWM_Count_1 (FF)
+  Destination:       XLXI_9/PWM_Count_20 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: XLXI_9/PWM_Count_1 to XLXI_9/PWM_Count_20
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               4   0.591   0.762  XLXI_9/PWM_Count_1 (XLXI_9/PWM_Count_1)
+     LUT1:I0->O            1   0.704   0.000  XLXI_9/Mcount_PWM_Count_cy<1>_rt (XLXI_9/Mcount_PWM_Count_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  XLXI_9/Mcount_PWM_Count_cy<1> (XLXI_9/Mcount_PWM_Count_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_9/Mcount_PWM_Count_cy<2> (XLXI_9/Mcount_PWM_Count_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_9/Mcount_PWM_Count_cy<3> (XLXI_9/Mcount_PWM_Count_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_9/Mcount_PWM_Count_cy<4> (XLXI_9/Mcount_PWM_Count_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_9/Mcount_PWM_Count_cy<5> (XLXI_9/Mcount_PWM_Count_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_9/Mcount_PWM_Count_cy<6> (XLXI_9/Mcount_PWM_Count_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_9/Mcount_PWM_Count_cy<7> (XLXI_9/Mcount_PWM_Count_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_9/Mcount_PWM_Count_cy<8> (XLXI_9/Mcount_PWM_Count_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_9/Mcount_PWM_Count_cy<9> (XLXI_9/Mcount_PWM_Count_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_9/Mcount_PWM_Count_cy<10> (XLXI_9/Mcount_PWM_Count_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_9/Mcount_PWM_Count_cy<11> (XLXI_9/Mcount_PWM_Count_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_9/Mcount_PWM_Count_cy<12> (XLXI_9/Mcount_PWM_Count_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_9/Mcount_PWM_Count_cy<13> (XLXI_9/Mcount_PWM_Count_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_9/Mcount_PWM_Count_cy<14> (XLXI_9/Mcount_PWM_Count_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_9/Mcount_PWM_Count_cy<15> (XLXI_9/Mcount_PWM_Count_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_9/Mcount_PWM_Count_cy<16> (XLXI_9/Mcount_PWM_Count_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_9/Mcount_PWM_Count_cy<17> (XLXI_9/Mcount_PWM_Count_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_9/Mcount_PWM_Count_cy<18> (XLXI_9/Mcount_PWM_Count_cy<18>)
+     MUXCY:CI->O           0   0.059   0.000  XLXI_9/Mcount_PWM_Count_cy<19> (XLXI_9/Mcount_PWM_Count_cy<19>)
+     XORCY:CI->O           1   0.804   0.000  XLXI_9/Mcount_PWM_Count_xor<20> (Result<20>)
+     FD:D                      0.308          XLXI_9/PWM_Count_20
+    ----------------------------------------
+    Total                      4.695ns (3.933ns logic, 0.762ns route)
+                                       (83.8% logic, 16.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              1.946ns (Levels of Logic = 1)
+  Source:            BTN_EAST (PAD)
+  Destination:       XLXI_3/Q1 (FF)
+  Destination Clock: clk rising
+
+  Data Path: BTN_EAST to XLXI_3/Q1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.420  BTN_EAST_IBUF (BTN_EAST_IBUF)
+     FDE:D                     0.308          XLXI_3/Q1
+    ----------------------------------------
+    Total                      1.946ns (1.526ns logic, 0.420ns route)
+                                       (78.4% logic, 21.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 144 / 2
+-------------------------------------------------------------------------
+Offset:              9.577ns (Levels of Logic = 14)
+  Source:            XLXI_9/PWM_Count_0 (FF)
+  Destination:       PWM_led (PAD)
+  Source Clock:      clk rising
+
+  Data Path: XLXI_9/PWM_Count_0 to PWM_led
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               4   0.591   0.762  XLXI_9/PWM_Count_0 (XLXI_9/PWM_Count_0)
+     LUT4:I0->O            1   0.704   0.000  XLXI_9/Mcompar_PWM_led_cmp_le0002_lut<0> (XLXI_9/Mcompar_PWM_led_cmp_le0002_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  XLXI_9/Mcompar_PWM_led_cmp_le0002_cy<0> (XLXI_9/Mcompar_PWM_led_cmp_le0002_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_9/Mcompar_PWM_led_cmp_le0002_cy<1> (XLXI_9/Mcompar_PWM_led_cmp_le0002_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_9/Mcompar_PWM_led_cmp_le0002_cy<2> (XLXI_9/Mcompar_PWM_led_cmp_le0002_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_9/Mcompar_PWM_led_cmp_le0002_cy<3> (XLXI_9/Mcompar_PWM_led_cmp_le0002_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_9/Mcompar_PWM_led_cmp_le0002_cy<4> (XLXI_9/Mcompar_PWM_led_cmp_le0002_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_9/Mcompar_PWM_led_cmp_le0002_cy<5> (XLXI_9/Mcompar_PWM_led_cmp_le0002_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_9/Mcompar_PWM_led_cmp_le0002_cy<6> (XLXI_9/Mcompar_PWM_led_cmp_le0002_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_9/Mcompar_PWM_led_cmp_le0002_cy<7> (XLXI_9/Mcompar_PWM_led_cmp_le0002_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_9/Mcompar_PWM_led_cmp_le0002_cy<8> (XLXI_9/Mcompar_PWM_led_cmp_le0002_cy<8>)
+     MUXCY:CI->O           1   0.459   0.499  XLXI_9/Mcompar_PWM_led_cmp_le0002_cy<9> (XLXI_9/PWM_led_cmp_le0002)
+     LUT4:I1->O            1   0.704   0.499  XLXI_9/PWM_o42_SW0 (N11)
+     LUT3:I1->O            2   0.704   0.447  XLXI_9/PWM_o42 (PWM_led_OBUF)
+     OBUF:I->O                 3.272          PWM_led_OBUF (PWM_led)
+    ----------------------------------------
+    Total                      9.577ns (7.370ns logic, 2.207ns route)
+                                       (77.0% logic, 23.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.77 secs
+ 
+--> 
+
+Total memory usage is 243404 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

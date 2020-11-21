@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\ICESI\LOGICA DIGITAL\LaboratorioLogica\ControlServoMotor\test_PWM_servo.ncd
+OUTFILE=D:\ICESI\LOGICA DIGITAL\LaboratorioLogica\ControlServoMotor\test_PWM_servo.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=D:\ICESI\LOGICA DIGITAL\LaboratorioLogica\ControlServoMotor
+LICENSE=WebPack
+USER_INFO=209914489_0_0_813
